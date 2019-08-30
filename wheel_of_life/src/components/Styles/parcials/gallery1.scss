@@ -1,0 +1,22 @@
+.frame{
+  padding: 15px;
+  ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+
+
+li{
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+  }
+}

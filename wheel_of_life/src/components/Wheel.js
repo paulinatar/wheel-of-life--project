@@ -3,15 +3,13 @@ import ReactApexChart from 'react-apexcharts'
 import './Wheel.scss'
 
 
-
-
 class Wheel extends Component {
 
     constructor(props) {
         super(props);
 
         this.state = {
-            isRendered: true,
+            isRendered: false,
             counter: 0,
             options: {
                 chart: {
@@ -63,42 +61,39 @@ class Wheel extends Component {
             },
 
 
-            ]
+            ],
+            reloaded: 10
         }
     }
 
     changeValue = (value) => {
-        let counter = this.state.counter;
-        let newSeries = this.state.series;
-            console.log(value,newSeries[counter])
+        if (this.state.counter != null) {
 
-        // tu bedzie if
 
-        if(newSeries[counter].data[counter +1] >= newSeries[counter].data.lenght){
-            newSeries[counter].data[0]=value
-            newSeries[counter].data[7]=value
-        }
-        newSeries[counter].data[counter] = value;
-        newSeries[counter].data[counter+1] = value;
+            let counter = this.state.counter;
+            let newSeries = this.state.series;
+            console.log(value, newSeries[counter])
 
-/*
-* this.setState(function(prevState, props){
-      return {showForm: !prevState.showForm}
-   });
-*
-* */
-        this.setState((prevState,props)=>{
-            return {
-                counter: counter+1,
-                series:newSeries
+            // tu bedzie if
+
+            if (counter === 7) {
+                newSeries[counter].data[0] = value
+                newSeries[counter].data[7] = value
+                this.setState({counter: counter + 1});
+
+            } else if (counter >7){
+                this.setState({counter: null});
             }
-        })
+            else {
+                newSeries[counter].data[counter] = value;
+                newSeries[counter].data[counter + 1] = value;
+                this.setState({counter: counter + 1});
+            }
 
-        // this.setState({
-        //     counter: counter+1,
-        //     series:newSeries
-        //
-        // })
+
+
+            this.setState({series: newSeries});
+        }
     }
 
     render() {
@@ -107,31 +102,31 @@ class Wheel extends Component {
         const pointsScale = [{
             label: "1",
             value: 10
-        },{
+        }, {
             label: "2",
             value: 20
-        },{
+        }, {
             label: "3",
             value: 30
-        },{
+        }, {
             label: "4",
             value: 40
-        },{
+        }, {
             label: "5",
             value: 50
-        },{
+        }, {
             label: "6",
             value: 60
-        },{
+        }, {
             label: "7",
             value: 70
-        },{
+        }, {
             label: "8",
             value: 80
-        },{
+        }, {
             label: "9",
             value: 90
-        },{
+        }, {
             label: "10",
             value: 100
         }
@@ -139,21 +134,33 @@ class Wheel extends Component {
 
         console.log("a render??");
 
-        const chart = (this.state.isRendered)&&<ReactApexChart options={this.state.options} series={this.state.series} type="radar" height="550"/>
+        const chart = (this.state.isRendered) &&
+            <ReactApexChart options={this.state.options} series={this.state.series} type="radar" height="550"/>
+        const result = () => {
+            return this.setState({isRendered: true})
+        };
+        let placeholder;
+        if (this.state.counter > 7 || this.state.counter == null ) {
+
+            placeholder = <h2 className="nameState">{"...and - please click"}</h2>
+
+        } else {
+            placeholder = <h2 className="nameState">{this.state.series[this.state.counter].name}</h2>
+        }
 
         return (<div className='wheel'>
 
-            <h2 className="nameState">{this.state.series[this.state.counter].name}</h2>
+            {placeholder}
             <div className='buttons'>
-                {pointsScale.map((item)=><button  className='numberButton' key={item.label} onClick={(e)=>{this.changeValue(item.value)}}>{item.label}</button>)}</div>
+                {pointsScale.map((item) => <button className='numberButton' key={item.label} onClick={(e) => {
+                    this.changeValue(item.value)
+                }}>{item.label}</button>)}</div>
+            <button className='renderedChart' onClick={result}>... and</button>
             <div id="chart">
                 {chart}
 
 
             </div>
-
-
-
 
 
         </div>);
