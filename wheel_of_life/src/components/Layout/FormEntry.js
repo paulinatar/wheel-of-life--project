@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import '../Styles/parcials/EntryForm.scss'
+import ReactContactForm from 'react-mail-form';
+import {NavLink} from "react-router-dom";
 
 
 class EntryForm extends Component {
@@ -53,24 +55,7 @@ class EntryForm extends Component {
         }
 
 
-        // this.setState({errorSend:false});
-        // this.setState({errorName: false});
-        // this.setState({errorSurname:false});
-        // this.setState({errorContact:false});
-        // event.preventDefault();
-        // if(this.state.name.length > 0 && this.state.surname.length> 0 && this.state.email.indexOf('@')!==1 &&this.state.mobile.length>0){
-        //    this.setState({formSend: true});
-        // } else {
-        //    if(this.state.name.length < 0){
-        //        this.setState({errorName: true})
-        //    }
-        //    if(this.state.surname.length<0){
-        //        this.setState({errorSurname:true});
-        //    } if(this.state.email.indexOf('@')!==1 && this.state.mobile.length<0){
-        //         this.setState({errorContact:true})
-        //     }
-        // }
-        //
+
 
     };
 
@@ -81,7 +66,7 @@ class EntryForm extends Component {
         return <>
             <div  className='firstForm'>
                 <form className='form' onSubmit={this.handleSubmit}>
-
+                    {/*<ReactContactForm to="p.tarnawska@gmail.com"   />*/}
                     <input name='userName' onChange={this.handleUserName} type='text' value={this.state.name}
                            placeholder='Enter Name'/>
                     <label>Enter Name </label>
@@ -108,7 +93,16 @@ class EntryForm extends Component {
                     {this.state.formSend && <p>Thank you</p>}
 
                 </form>
+
+                <button><NavLink to="/now" className='menuStyle'>Your present</NavLink></button>
             </div>
+
+
+
+
+
+
+
         </>
     }
 }

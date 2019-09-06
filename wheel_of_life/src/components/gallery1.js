@@ -8,7 +8,7 @@ class Gallery extends Component {
             '/images/image00003.jpeg',
             '/images/image00004.jpeg',
             '/images/image00007.jpeg',
-            '/images/image00001.jpeg',
+            '/images/image00024.jpeg',
             '/images/image00009.jpeg',
             '/images/image00011.jpeg',
             '/images/image00015.jpeg',
@@ -19,11 +19,13 @@ class Gallery extends Component {
         size: '150px'
     };
     handleClick = (index) => {
+        if(this.state.listaB.length<4){
         this.setState( {
             listaB:  [  ...this.state.listaB, this.state.listaA[index] ],
             listaA: this.state.listaA.filter( (el,indexA) => indexA !== index  )
         } );
-        this.setState({size:'250px'})
+
+        this.setState({size:'250px'})}
     }
     render(){
         let style ={
@@ -37,15 +39,6 @@ class Gallery extends Component {
         return (
             <div className='frame'>
 
-                <ul>
-
-                    {
-                        this.state.listaA.map( (el,index) => <li  onClick={() => this.handleClick(index)} >{
-                            <img style ={style}src={el} />
-                            }</li> )
-                    }
-                </ul>
-<hr/>
                 <p>Selected photo</p>
                 <ul>
 
@@ -53,56 +46,22 @@ class Gallery extends Component {
                         this.state.listaB.map( el => <li style ={secondStyle}>{<img style={secondStyle} src={el} />}</li> )
                     }
                 </ul>
+                <hr/>
+                <ul>
+
+                {
+                    this.state.listaA.map( (el,index) => <li  onClick={() => this.handleClick(index)} >{
+                        <img style ={style}src={el} />
+                    }</li> )
+                }
+            </ul>
             </div>
         )
     }
 }
 
-// class ImageLi extends Component{
-//     state={
-//         size: '150px'
-//     };
-//     handleOnClick=()=>{
-//         this.setState({size:'300px'})
-//     }
-//     render() {
-//         let style={
-//             width:this.state.size,
-//             height:this.state.size,
-//              backgroundImage: `url({this.props.image})`
-//         };
-//         return (
-//             <li style={style} onClick={this.handleOnClick}></li>
-//         )
-//     }
-// }
-//
-//
-// class Gallery extends Component{
-//    state ={
-//        type: 'small',
-//        images:['./Styles/images/IMG-20190825-WA0005.jpg']
-//    }
-//
-//
-//     render() {
-//         return <div className='frame'>
-//             <ul>
-//                 <ImageLi image={this.state.images[0]} />
-//                 <ImageLi image={this.state.images} />
-//                 <ImageLi image={this.state.images} />
-//                 <ImageLi image={this.state.images} />
-//                 <ImageLi image={this.state.images} />
-//                 <ImageLi image={this.state.images} />
-//                 <ImageLi image={this.state.images} />
-//                 <ImageLi image={this.state.images} />
-//                 <ImageLi image={this.state.images} />
-//                 <ImageLi image={this.state.images} />
-//
-//         </ul>
-//         </div>
-//     }
-// }
+
+
 
 
 
