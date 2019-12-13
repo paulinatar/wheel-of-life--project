@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/wheel-of-life--project/static/css/main.b614450a.chunk.css",
-    "main.js": "/wheel-of-life--project/static/js/main.8a04c37b.chunk.js",
-    "main.js.map": "/wheel-of-life--project/static/js/main.8a04c37b.chunk.js.map",
-    "runtime~main.js": "/wheel-of-life--project/static/js/runtime~main.1479e464.js",
-    "runtime~main.js.map": "/wheel-of-life--project/static/js/runtime~main.1479e464.js.map",
-    "static/js/2.3f5b7a78.chunk.js": "/wheel-of-life--project/static/js/2.3f5b7a78.chunk.js",
-    "static/js/2.3f5b7a78.chunk.js.map": "/wheel-of-life--project/static/js/2.3f5b7a78.chunk.js.map",
+    "main.css": "/wheel-of-life--project/static/css/main.958e7845.chunk.css",
+    "main.js": "/wheel-of-life--project/static/js/main.4d8959de.chunk.js",
+    "main.js.map": "/wheel-of-life--project/static/js/main.4d8959de.chunk.js.map",
+    "runtime-main.js": "/wheel-of-life--project/static/js/runtime-main.8a4e3bec.js",
+    "runtime-main.js.map": "/wheel-of-life--project/static/js/runtime-main.8a4e3bec.js.map",
+    "static/js/2.8c525d77.chunk.js": "/wheel-of-life--project/static/js/2.8c525d77.chunk.js",
+    "static/js/2.8c525d77.chunk.js.map": "/wheel-of-life--project/static/js/2.8c525d77.chunk.js.map",
     "index.html": "/wheel-of-life--project/index.html",
-    "precache-manifest.7b1e8fad85e2b6708b621f6251567242.js": "/wheel-of-life--project/precache-manifest.7b1e8fad85e2b6708b621f6251567242.js",
+    "precache-manifest.26a2163ad553c14adb76384e3cfc58f6.js": "/wheel-of-life--project/precache-manifest.26a2163ad553c14adb76384e3cfc58f6.js",
     "service-worker.js": "/wheel-of-life--project/service-worker.js",
-    "static/css/main.b614450a.chunk.css.map": "/wheel-of-life--project/static/css/main.b614450a.chunk.css.map",
+    "static/css/main.958e7845.chunk.css.map": "/wheel-of-life--project/static/css/main.958e7845.chunk.css.map",
+    "static/js/2.8c525d77.chunk.js.LICENSE": "/wheel-of-life--project/static/js/2.8c525d77.chunk.js.LICENSE",
     "static/media/EntryForm.scss": "/wheel-of-life--project/static/media/IMG-20190825-WA0003(1).1f221a0a.jpg"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8a4e3bec.js",
+    "static/js/2.8c525d77.chunk.js",
+    "static/css/main.958e7845.chunk.css",
+    "static/js/main.4d8959de.chunk.js"
+  ]
 }
