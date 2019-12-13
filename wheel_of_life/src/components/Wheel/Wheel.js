@@ -69,16 +69,12 @@ class Wheel extends Component {
     changeValue = (value) => {
         if (this.state.counter != null) {
 
-
             let counter = this.state.counter;
             let newSeries = this.state.series;
-            console.log(value, newSeries[counter])
-
-            // tu bedzie if
-
+            console.log(value, newSeries[counter]);
             if (counter === 7) {
-                newSeries[counter].data[0] = value
-                newSeries[counter].data[7] = value
+                newSeries[counter].data[0] = value;
+                newSeries[counter].data[7] = value;
                 this.setState({counter: counter + 1});
 
             } else if (counter >7){
@@ -89,12 +85,9 @@ class Wheel extends Component {
                 newSeries[counter].data[counter + 1] = value;
                 this.setState({counter: counter + 1});
             }
-
-
-
             this.setState({series: newSeries});
         }
-    }
+    };
 
     render() {
 
@@ -130,9 +123,7 @@ class Wheel extends Component {
             label: "10",
             value: 100
         }
-        ]
-
-        console.log("a render??");
+        ];
 
         const chart = (this.state.isRendered) &&
             <ReactApexChart options={this.state.options} series={this.state.series} type="radar" height="550"/>
@@ -141,21 +132,18 @@ class Wheel extends Component {
         };
         let placeholder;
         if (this.state.counter > 7 || this.state.counter == null ) {
-
-            placeholder = <h2 className="nameState">{"...and - please click"}</h2>
-
+            placeholder = <h2 className="nameState">{"Please click Wheel of Life"}</h2>
         } else {
             placeholder = <h2 className="nameState">{this.state.series[this.state.counter].name}</h2>
         }
 
         return (<div className='wheel'>
-
             {placeholder}
             <div className='buttons'>
                 {pointsScale.map((item) => <button className='numberButton' key={item.label} onClick={(e) => {
                     this.changeValue(item.value)
                 }}>{item.label}</button>)}</div>
-            <button className='renderedChart' onClick={result}>... and</button>
+            <button className='renderedChart' onClick={result}>Wheel of Life</button>
             <div id="chart">
                 {chart}
 

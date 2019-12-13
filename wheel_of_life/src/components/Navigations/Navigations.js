@@ -1,11 +1,6 @@
 import React,{Component} from "react";
 import {NavLink} from "react-router-dom";
-import './Styles/parcials/Navigations.scss'
-
-
-
-
-
+import './Navigations.scss'
 
 
 function Navigations() {
@@ -24,14 +19,7 @@ function Navigations() {
             <h1>CREATE THE LIFE WORTH LIVING </h1>
                 <h4>KreivoPlan Kasia Nowacka</h4>
             </div>
-            {/*<div className='menuDiv'>*/}
-            {/*<ul className='menu'>*/}
-            {/*    <li><NavLink exact to="/" activeStyle={selectedStyle} className='menuStyle'>Welcome</NavLink></li>*/}
-            {/*    <li><NavLink to="/now" activeStyle={selectedStyle}className='menuStyle'>Now</NavLink></li>*/}
-            {/*    <li><NavLink to="/future" activeStyle={selectedStyle}className='menuStyle'>Future</NavLink></li>*/}
 
-            {/*</ul>*/}
-            {/*</div>*/}
         </nav>
     )
 }

@@ -1,8 +1,7 @@
 import React,{Component} from "react";
-import '../Styles/parcials/FutureWheel.scss'
-import {NavLink} from "react-router-dom";
-import Wheel from '../Wheel'
-import GalleryF from '../gallery2'
+import './FutureWheel.scss'
+import Wheel from '../Wheel/Wheel'
+import GalleryF from './gallery2'
 
 
 class FutureWheel extends Component{
@@ -11,7 +10,8 @@ class FutureWheel extends Component{
             <h1 >What do you expect to achieve after completing our program ? </h1>
         <Wheel/>
             <h2>Choice four photo which should be showing your life in future</h2>
-<GalleryF/>
+        <GalleryF/>
+        <p>Thank you for your </p>
         </div>)
     }
 }

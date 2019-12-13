@@ -1,0 +1,52 @@
+.firstForm{
+  display: block;
+  padding: 50px;
+  height: 300px;
+
+  .form{
+    display: block;
+    input{
+      padding: 15px 35px;
+      margin: 10px;
+      border: 1px solid black;
+    }
+    .greenBtn{
+      background-color: #7eaba6;
+      padding: 15px 100px;
+      margin: 10px;
+      color: white;
+    };
+  }
+}
+@media (min-width: 576px) {
+  .firstForm{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
+
+@media (min-width: 768px) {
+  .firstForm{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("IMG-20190825-WA0003(1).jpg")  ;
+    background-position: right bottom;
+    background-size: 500px 400px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 992px) {
+  .firstForm{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .firstForm{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

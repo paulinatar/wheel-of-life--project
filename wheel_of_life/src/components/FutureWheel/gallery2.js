@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Styles/parcials/gallery1.scss'
+import '../NowWheel/gallery1.scss'
 
 class GalleryF extends Component {
     state ={

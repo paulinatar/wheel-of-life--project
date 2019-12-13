@@ -3,10 +3,10 @@ import React,{Component} from 'react';
 
 import {HashRouter, Link, Switch, Route} from "react-router-dom";
 import './App.scss';
-import Navigations from '../Navigations'
-import EntryForm from "../Layout/FormEntry"
-import NowWheel from '../Layout/NowWheel'
-import FutureWheel from '../Layout/FutureWheel'
+import Navigations from '../Navigations/Navigations'
+import EntryForm from "../EntryForm/FormEntry"
+import NowWheel from "../NowWheel/NowWheel"
+import FutureWheel from "../FutureWheel/FutureWheel"
 import './App.scss'
 
 

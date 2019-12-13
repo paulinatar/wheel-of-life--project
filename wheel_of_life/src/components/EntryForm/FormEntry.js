@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import '../Styles/parcials/EntryForm.scss'
+import './EntryForm.scss'
 import ReactContactForm from 'react-mail-form';
 import {NavLink} from "react-router-dom";
 
@@ -70,14 +70,14 @@ class EntryForm extends Component {
                     <input name='userName' onChange={this.handleUserName} type='text' value={this.state.name}
                            placeholder='Enter Name'/>
                     <label>Enter Name </label>
-                    {this.state.errorName && <p>Please enter name</p>}
+                    {this.state.errorName && <p style={{color:'red', fontSize:'12px'}}>Please enter name</p>}
                     <br/>
 
 
                     <input surname='userSurname' onChange={this.handleUserSurname} type='text'
                            value={this.state.surname} placeholder='Enter Surname'/>
-                    <label>Enter Surname</label>
-                    {this.state.errorSurname && <p>Please enter surname </p>}
+                    <label >Enter Surname</label>
+                    {this.state.errorSurname && <p style={{color:'red', fontSize:'12px'}}>Please enter surname </p>}
                     <br/>
 
 
@@ -87,14 +87,14 @@ class EntryForm extends Component {
                            value={this.state.mobile} placeholder='Mobile Phone'/>
                     <br/>
                     <label> Method of contact: email or/and mobile phone</label>
-                    {this.state.errorContact && <p>Please enter email or/and mobile phone</p>}
+                    {this.state.errorContact && <p style={{color:'red', fontSize:'12px'}}>Please enter email or/and mobile phone</p>}
                     <br/>
-                    <button type='submit' value='send'>Send</button>
+                    <button className='greenBtn' type='submit' value='send'>Send</button>
                     {this.state.formSend && <p>Thank you</p>}
-
+                    <button className='greenBtn'><NavLink to="/now" style={{textDecoration:'none', color:"white"}}>Your present</NavLink></button>
                 </form>
 
-                <button><NavLink to="/now" className='menuStyle'>Your present</NavLink></button>
+
             </div>
 
 

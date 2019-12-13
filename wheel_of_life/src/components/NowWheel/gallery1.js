@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Styles/parcials/gallery1.scss'
+import './gallery1.scss'
 
 class Gallery extends Component {
     state ={
@@ -59,12 +59,6 @@ class Gallery extends Component {
         )
     }
 }
-
-
-
-
-
-
 export default Gallery
 
 
