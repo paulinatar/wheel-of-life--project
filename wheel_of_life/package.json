@@ -2,7 +2,7 @@
   "name": "wheel_of_life",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://paulinatar.github.io/wheel-of-life--project",
+  "homepage": "https://paulinatar.github.io/wheel-of-life--project/wheel_of_life",
   "dependencies": {
     "apexcharts": "^3.8.5",
     "gh-pages": "^2.1.1",
