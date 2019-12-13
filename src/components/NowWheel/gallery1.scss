@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    justify-content: space-between;
 li{
   width: 150px;
   height: 150px;
@@ -22,8 +23,8 @@ li{
   }
 }
 
-@media (min-width: 992px) {
-  ul{
-  justify-content: space-between;}
-
-}
+//@media (min-width: 992px) {
+//  ul{
+//  justify-content: space-between;}
+//
+//}
