@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/wheel-of-life--project/precache-manifest.26a2163ad553c14adb76384e3cfc58f6.js"
+  "/wheel-of-life--project/precache-manifest.7000ddbd2d9c94f708ceaceaded8f9ed.js"
 );
 
 self.addEventListener('message', (event) => {
