@@ -4,7 +4,19 @@
     <list default="true" id="2ec05d89-ece0-4fb8-8e50-bd50c1dd6ec1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EntryForm/FormEntry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EntryForm/FormEntry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FutureWheel/FutureWheel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FutureWheel/FutureWheel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FutureWheel/FutureWheel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FutureWheel/FutureWheel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FutureWheel/gallery2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FutureWheel/gallery2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigations/Navigations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigations/Navigations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigations/Navigations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigations/Navigations.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NowWheel/NowWheel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NowWheel/NowWheel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NowWheel/NowWheel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NowWheel/NowWheel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NowWheel/gallery1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NowWheel/gallery1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NowWheel/gallery1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NowWheel/gallery1.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Wheel/Wheel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Wheel/Wheel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Wheel/Wheel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Wheel/Wheel.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wheel_of_life/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../oddaj-rzeczy-" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -102,7 +114,8 @@
       <workItem from="1576239152930" duration="23000" />
       <workItem from="1576239176990" duration="652000" />
       <workItem from="1576241442390" duration="5640000" />
-      <workItem from="1576250587593" duration="760000" />
+      <workItem from="1576250587593" duration="1402000" />
+      <workItem from="1576414423521" duration="7061000" />
     </task>
     <servers />
   </component>
@@ -110,18 +123,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="588" y="214" width="800" height="677" key="#ESLint" timestamp="1576243002451">
+    <state x="588" y="214" width="800" height="677" key="#ESLint" timestamp="1576419546624">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="214" width="800" height="677" key="#ESLint/67.27.1853.1053@67.27.1853.1053" timestamp="1576243002451" />
+    <state x="588" y="214" width="800" height="677" key="#ESLint/67.27.1853.1053@67.27.1853.1053" timestamp="1576419546624" />
     <state x="588" y="214" width="800" height="677" key="#Images" timestamp="1576241591131">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="214" width="800" height="677" key="#Images/67.27.1853.1053@67.27.1853.1053" timestamp="1576241591131" />
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576239173626">
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576414519102">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1576239173626" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1576414519102" />
     <state width="1830" height="278" key="GridCell.Tab.0.bottom" timestamp="1576250884053">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

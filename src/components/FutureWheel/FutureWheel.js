@@ -8,12 +8,12 @@ class FutureWheel extends Component{
     render() {
         return (<div className='futureText'>
             <h1 >What do you expect to achieve after completing our program ? </h1>
-        <Wheel/>
-            <h2>Choice four photo which should be showing your life in future</h2>
-        <GalleryF/>
-        <p>Thank you for your </p>
+              <Wheel/>
+              <h2>Choice four photo which should be showing your life in the future</h2>
+                <GalleryF/>
+            <p>Thank you for your cooperation ! </p>
+            <p>Your answers help us to starting work to improve your life</p>
         </div>)
     }
 }
-
 export default FutureWheel

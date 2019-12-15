@@ -1,20 +1,18 @@
 .frame{
   padding: 15px;
-
   ul{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
     justify-content: space-between;
-li{
-  width: 150px;
-  height: 150px;
-  border: 1px solid black;
-  background-position: center;
-  background-size: cover;
-
-}
+    li{
+     width: 150px;
+      height: 150px;
+      border: 1px solid black;
+      background-position: center;
+      background-size: cover;
+     }
   }
 }
 @media (min-width: 768px) {
@@ -23,8 +21,3 @@ li{
   }
 }
 
-//@media (min-width: 992px) {
-//  ul{
-//  justify-content: space-between;}
-//
-//}

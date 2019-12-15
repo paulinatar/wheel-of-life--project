@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-scroll'
 import './gallery1.scss'
 
 class Gallery extends Component {
@@ -38,17 +39,15 @@ class Gallery extends Component {
 
         return (
             <div className='frame'>
-
-                <p>Selected photo</p>
+                <button><Link to ='selectedPhotos' spy={true} smooth = {true} duration = {500}>Photos</Link></button>
+                <p name ="selectedPhotos">Selected photo</p>
                 <ul>
-
                     {
                         this.state.listaB.map( el => <li style ={secondStyle}>{<img style={secondStyle} src={el} />}</li> )
                     }
                 </ul>
                 <hr/>
                 <ul>
-
                 {
                     this.state.listaA.map( (el,index) => <li  onClick={() => this.handleClick(index)} >{
                         <img style ={style}src={el} />

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../NowWheel/gallery1.scss'
+import {Link} from "react-scroll";
 
 class GalleryF extends Component {
     state ={
@@ -26,7 +27,7 @@ class GalleryF extends Component {
             } );
 
             this.setState({size:'250px'})}
-    }
+    };
     render(){
         let style ={
             width:'150px',
@@ -35,20 +36,17 @@ class GalleryF extends Component {
             width: '250px',
             height: '250px'
         };
-
         return (
             <div className='frame'>
-
-                <p>Selected photo</p>
+                <button><Link to ='selectedPhotos' spy={true} smooth = {true} duration = {500}>Photos</Link></button>
+                <p name ="selectedPhotos">Selected photo</p>
                 <ul>
-
                     {
                         this.state.listaB.map( el => <li style ={secondStyle}>{<img style={secondStyle} src={el} />}</li> )
                     }
                 </ul>
                 <hr/>
                 <ul>
-
                     {
                         this.state.listaA.map( (el,index) => <li  onClick={() => this.handleClick(index)} >{
                             <img style ={style}src={el} />
@@ -59,10 +57,4 @@ class GalleryF extends Component {
         )
     }
 }
-
-
-
-
-
-
 export default GalleryF

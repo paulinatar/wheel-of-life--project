@@ -1,39 +1,25 @@
-.around{
+.around {
   display: block;
   padding: 20px 60px;
   color: #7eaba6;
   height: 100px;
-
-
-  .menuWelcome{
+  .menuWelcome {
     display: inline-block;
     float: left;
   }
-
-  .menuDiv{
+  .menuDiv {
     display: block;
     float: right;
-    .menu{
+    .menu {
       display: inline-block;
       float: right;
       list-style-type: none;
       margin: 0 auto;
-      .menuStyle{
+      .menuStyle {
         text-decoration: none;
         color: #7eaba6;
-
       }
-
-
-
-
     }
-
-
   }
-
-
-
-
 }
 

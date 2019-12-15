@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-scroll';
 import ReactApexChart from 'react-apexcharts'
 import './Wheel.scss'
 
@@ -65,7 +66,6 @@ class Wheel extends Component {
             reloaded: 10
         }
     }
-
     changeValue = (value) => {
         if (this.state.counter != null) {
 
@@ -90,8 +90,6 @@ class Wheel extends Component {
     };
 
     render() {
-
-
         const pointsScale = [{
             label: "1",
             value: 10
@@ -136,23 +134,17 @@ class Wheel extends Component {
         } else {
             placeholder = <h2 className="nameState">{this.state.series[this.state.counter].name}</h2>
         }
-
         return (<div className='wheel'>
             {placeholder}
             <div className='buttons'>
                 {pointsScale.map((item) => <button className='numberButton' key={item.label} onClick={(e) => {
                     this.changeValue(item.value)
                 }}>{item.label}</button>)}</div>
-            <button className='renderedChart' onClick={result}>Wheel of Life</button>
-            <div id="chart">
+                <button><Link activeClass ='active' to='chartW' spy={true} duration={500} smooth ={true} className='renderedChart' onClick={result}>Wheel of Life</Link></button>
+            <div id="chart" name ='chartW'>
                 {chart}
-
-
             </div>
-
-
         </div>);
     }
 }
-
 export default Wheel
